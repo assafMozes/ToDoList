@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="ui/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/Users/Administrator/Downloads/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/style.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Reenie+Beanie" rel="stylesheet">
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Mission Impossible</h1>
+    <article id="theSheet">
+        <div id="todo" class="columns todo">
+            <div class="column_head todo">to do
+                <span class="ui-icon ui-icon-plusthick plus"></span>
+            </div>
+        </div>
+        <div id="progress" class="columns progress">
+            <div class="column_head progress">in progress
+                <span class="ui-icon ui-icon-plusthick plus"></span>
+            </div>
+        </div>
+        <div id="done" class="columns done">
+            <div class="column_head done">done
+                <span class="ui-icon ui-icon-plusthick plus"></span>
+            </div>
+        </div>
+        <div id="makeStory" title="this story">
+            <ul>
+                <li><a href="#story">story</a></li>
+                <li><a href="#comments">comments</a></li>
+            </ul>
+            <div id="story">
+                title <input type="text" id="title"> 
+                description: <textarea name="" id="description" cols="20" rows="5"></textarea>               
+                 priority: <input type="text" id="priority_level">
+                <div id="priority"></div>
+                <p>due date:<input type="text" id="due_date"></p>
+            </div>
+            <div id="comments">
+                <ul id="commentsList">
+                    <li id="tmp">no comments</li>
+                </ul>
+                <textarea name="" id="commentTextArea" cols="20" rows="2"></textarea>
+                <button id="saveComment">save</button>
+            </div>
+        </div>
+    </article>
+    <script src="todo.js"></script>
+</body>
+
+</html>
